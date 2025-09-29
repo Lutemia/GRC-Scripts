@@ -5,7 +5,7 @@ function sendQuarterlyReminder() {
   recipients.forEach(email => {
     MailApp.sendEmail({
       to: email,
-      subject: "📝 Quarterly Risk Assessment Reminder",
+      subject: "Quarterly Risk Assessment Reminder",
       body: `Please complete the quarterly GRC risk assessment: ${formURL}`
     });
   });
